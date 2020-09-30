@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    max-width: 1000px;
+    min-width: 550px;
+    margin: 40px auto;
+
+    background: url("../pics/background.jpg") no-repeat fixed;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background: url("../pics/header.jpg") no-repeat center;
+    height: 300px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    right: 15%;
+    top: 25%;
+    color: #6600cc;
+    font-size: 5em;
+}
+
+nav {
+    background: rgba(102, 0, 204, 0.8);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav>ul>li {
+    float: left;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+main {
+    background: white;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 77px;
+}
+
+.content {
+    width: 100%;
+    padding: 15px;
+    text-align: justify;
+}
+
+.content img {
+    float: left;
+    border: 1px dashed purple;
+    padding: 10px;
+    margin: 0 10px;
+    height: 50%;
+    width: 50%;
+}
+
+.content p {
+    padding: 5px;
+}
+
+.left-link, .right-link {
+    position: fixed;
+    top: 43vh;
+    font-size: 5em;
+    /* border: 3px solid black; */
+}
+
+.left-link a, .right-link a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+.left-link a:hover, .right-link a:hover{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.left-link {
+    left: 0;
+}
+
+.right-link {
+    right: 0;
+}
+
+footer {
+    background: black;
+    color: white;
+    height: 50px;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
